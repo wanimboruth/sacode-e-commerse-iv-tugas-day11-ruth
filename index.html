@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div class="user hide-details" id="userBox">
+    <img src="image.png" onclick="openinfo()">
+    <div class="info">
+        <h1>Jhon Smith</h1>
+        <p>Working as a product manager at <span> Microsoft Inc.</span></p>
+        <p>From: california, United Status</p>
+        <a href="#">Connect with me</a>
+    </div>
+    <div class="close-icon" onclick="closeinfo()"></div>
+</div>
+
+<script>
+
+let userBox = document.getElementById("userBox");
+
+function openinfo(){
+    userBox.classList.remove("hide-details");
+}
+function closeinfo(){
+    userBox.classList.add("hide-details");
+}
+
+</script>
+
+</body>
+</html>
